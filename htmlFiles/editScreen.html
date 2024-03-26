@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssFiles/editScreen.css" />
+    <title>Editar Información del Producto</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Edición de Información del Producto</h2>
+
+        <form>
+            <label for="productId">Código:</label>
+            <input type="text" id="productId" disabled>
+
+            <label for="productName">Nombre:</label>
+            <input type="text" id="productName">
+
+            <label for="productProvider">Proveedor:</label>
+            <input type="text" id="productProvider">
+
+            <label for="productDescription">Descripción:</label>
+            <input type="text" id="productDescription">
+
+            <label for="productCategory">Categoría:</label>
+            <input type="text" id="productCategory">
+
+            <label for="productStock">Existencia en Inventario:</label>
+            <input type="text" id="productStock">
+            <div class="button-container">
+                <button type="button" onclick="resetChanges()">Restablecer Cambios</button>
+                <button id= "saveButton" type="button">Guardar Cambios</button>
+                <button type="button" onclick="returnPage()">Regresar</button>
+            </div>
+            <div id="db-message" class="error-message"></div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../jsFiles/editScreen.js"></script>
+</body>
+
+</html>

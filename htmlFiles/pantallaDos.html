@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../cssFiles/pantallaDos.css"/>
+    <title>List of Products</title>
+
+</head>
+<body>
+
+    <h2 class="Header2">Lista de Productos</h2>
+
+    <table class="container">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Proveedor</th>
+                <th>Categoria</th>
+                <th>Existencia</th>
+                <th>Descripcion</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Aguacates</td>
+                <td>Avocados from Mexico</td>
+                <td>Description of Product A</td>
+                <td>Category 1</td>
+                <td>
+                    <span id="stockValue">50</span>
+                    <input type="number" id="editStockInput" style="display: none" />
+                </td>
+                <td>
+                    <button onclick="editProduct(1)">Editar</button>
+                    <button onclick="placeOrder(1)">Solicitar Pedido</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+<script type="text/javascript" src="../jsFiles/pantallaDos.js"></script>
+</body>
+</html>
